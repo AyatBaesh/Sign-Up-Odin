@@ -1,0 +1,123 @@
+/* GENERAL STYLING */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("fonts/Norse-Bold.otf");
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 40%;
+  height: 100vh;
+  /* max-height: 1080px; */
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* LOGO STYLING */
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 25% auto 50% auto;
+}
+#logo-img {
+  width: 25%;
+  height: 25%;
+}
+.logo-caption {
+  font-family: Norse-Bold, sans-serif;
+  color: white;
+  font-size: 72px;
+}
+/* FORM-SECITON STYLING */
+.form-section {
+  width: 60%;
+}
+.header {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Norse-Bold, sans-serif;
+  font-size: 24px;
+  background-color: rgba(236, 229, 199, 0.3);
+  box-shadow: 0px 0px 14px -5px black;
+}
+
+form {
+  color: rgb(53, 66, 89);
+  height: 85%;
+  justify-self: center;
+  background-color: rgba(205, 194, 174, 0.3);
+  font-size: 24px;
+}
+form > * {
+  padding: 0 1em;
+}
+input {
+  color: rgb(53, 66, 89);
+  font-size: 24px;
+  width: 100%;
+  border-radius: 5px;
+}
+input:valid {
+  border-color: rgb(8, 255, 41);
+}
+input:invalid {
+  border-color: red;
+}
+fieldset {
+  height: 80%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+legend {
+  padding-top: 1em;
+  font-family: Norse-Bold, sans-serif;
+}
+.row {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.submit {
+  height: 20%;
+  background-color: rgba(236, 229, 199, 0.3);
+  box-shadow: 0px 0px 14px -5px black;
+}
+button {
+  font-size: 20px;
+  margin: 1em 0;
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+  box-shadow: 0px 0px 14px -5px gray;
+  background-color: rgba(236, 229, 199, 1);
+}
+button:hover {
+  cursor: pointer;
+}

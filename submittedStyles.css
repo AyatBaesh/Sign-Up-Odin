@@ -1,0 +1,43 @@
+/* GENERAL STYLING */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.sidebar {
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("fonts/Norse-Bold.otf");
+}
+
+/* LOGO STYLING */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#logo-img {
+  width: 25%;
+  height: 25%;
+}
+.logo-caption {
+  font-family: Norse-Bold, sans-serif;
+  color: white;
+  font-size: 72px;
+}
+a {
+  color: white;
+}
+a:visited {
+  color: gray;
+}
